@@ -138,6 +138,9 @@ table.bottomtable tfoot .links a{
 .webframe-intro{
 	display: none;
 }
+.webframepdf-intro{
+	display: none;
+}
 		</style>
 		<script type="text/javascript">
 			$(document).ready(function(){
@@ -168,6 +171,11 @@ table.bottomtable tfoot .links a{
 			$(document).ready(function(){
 		$(".webframe-btn").click(function(){
 			$(".webframe-intro").toggle();
+		});
+	});
+			$(document).ready(function(){
+		$(".webframepdf-btn").click(function(){
+			$(".webframepdf-intro").toggle();
 		});
 	});
 		
@@ -250,6 +258,11 @@ table.bottomtable tfoot .links a{
 <div class="webframe-intro">
 
 <img width="900" height="495" src="image/xmind.jpg" alt="網站結構圖">
+</div>
+<br>
+<button type="button" class="webframepdf-btn btn-warning"><h2>▼ 網站結構圖pdf </h2></button>
+<div class="webframepdf-intro">
+<iframe src="webframe-pdf.pdf" width="80%" height="768px"></iframe>
 </div>
 </center></pre>
 <!--網頁底部圖片-->
